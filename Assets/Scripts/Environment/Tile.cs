@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Tile : MonoBehaviour
 {
+    [SerializeField]
     private bool _isDirty = false;
 
     public bool IsDirty
