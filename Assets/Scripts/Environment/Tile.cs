@@ -18,4 +18,12 @@ public class Tile : MonoBehaviour
             GetComponent<Renderer>().material.color = _isDirty ? Color.red : Color.white;
         }
     }
+
+    public void Run()
+    {
+        if (!IsDirty && Random.Range(0f, 1f) > 0.75f)
+        {
+            IsDirty = true;
+        }
+    }
 }

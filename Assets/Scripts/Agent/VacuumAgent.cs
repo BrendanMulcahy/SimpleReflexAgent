@@ -5,6 +5,9 @@ public class VacuumAgent : MonoBehaviour
 {
     private DirtSensor _dirtSensor;
 
+    [SerializeField]
+    private int score = 0;
+
     private void Start()
     {
         _dirtSensor = new DirtSensor();
@@ -14,6 +17,7 @@ public class VacuumAgent : MonoBehaviour
     private void Vacuum(Tile tile)
     {
         tile.IsDirty = false;
+        score += 5;
     }
 
     // Maybe run shouldn't take the whole environment

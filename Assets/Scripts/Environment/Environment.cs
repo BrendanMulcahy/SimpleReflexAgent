@@ -30,6 +30,9 @@ public class Environment : MonoBehaviour
         if (_elaspedTime >= _timeStep)
         {
             _agent.Run(this);
+            _tileA.Run();
+            _tileB.Run();
+
             _elaspedTime = 0;
         }
     }
