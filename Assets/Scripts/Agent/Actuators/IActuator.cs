@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-interface IActuator
+﻿internal interface IActuator
 {
     void Execute();
 }

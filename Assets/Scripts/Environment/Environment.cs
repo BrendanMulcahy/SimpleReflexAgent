@@ -1,21 +1,18 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Environment : MonoBehaviour
 {
-    [SerializeField]
-    private VacuumAgent _agent;
-
-    [SerializeField]
-    private Tile _tileA;
-
-    [SerializeField]
-    private Tile _tileB;
+    [SerializeField] private VacuumAgent _agent;
 
     private Tile _currentTile;
 
-    private float _elaspedTime = 0; // in seconds
-    private float _timeStep = 1; // in seconds
+    private float _elaspedTime; // in seconds
+
+    [SerializeField] private Tile _tileA;
+
+    [SerializeField] private Tile _tileB;
+
+    private readonly float _timeStep = 1; // in seconds
 
     private void Start()
     {

@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
 public class VacuumAgent : MonoBehaviour
 {
     private DirtSensor _dirtSensor;
 
-    [SerializeField]
-    private int score = 0;
+    [SerializeField] private int score;
 
     private void Start()
     {
@@ -27,10 +25,9 @@ public class VacuumAgent : MonoBehaviour
         {
             Vacuum(environment.CurrentTile());
         }
-        else 
+        else
         {
             environment.Move();
         }
     }
-
 }

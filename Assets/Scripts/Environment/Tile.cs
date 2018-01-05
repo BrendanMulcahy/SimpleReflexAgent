@@ -1,17 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Tile : MonoBehaviour
 {
-    [SerializeField]
-    private bool _isDirty = false;
+    [SerializeField] private bool _isDirty;
 
     public bool IsDirty
     {
-        get
-        {
-            return _isDirty;
-        }
+        get { return _isDirty; }
         set
         {
             _isDirty = value;
